@@ -1,0 +1,35 @@
+{
+  "virtualPath": "",
+  "rdbms": {
+    "H2": {
+      "sshTunnelPort": "22",
+      "sshTunnelUsePrivateKey": false,
+      "databaseName": "",
+      "pluginId": "H2",
+      "sshTunnelEnabled": false,
+      "accessType": 0,
+      "sshTunnelUsername": "",
+      "hostname": "",
+      "password": "Encrypted ",
+      "pluginName": "H2",
+      "port": "8082",
+      "sshTunnelHost": "",
+      "attributes": {
+        "SUPPORTS_TIMESTAMP_DATA_TYPE": "N",
+        "QUOTE_ALL_FIELDS": "N",
+        "SUPPORTS_BOOLEAN_DATA_TYPE": "N",
+        "FORCE_IDENTIFIERS_TO_LOWERCASE": "N",
+        "PRESERVE_RESERVED_WORD_CASE": "Y",
+        "SQL_CONNECT": "",
+        "FORCE_IDENTIFIERS_TO_UPPERCASE": "N",
+        "PREFERRED_SCHEMA_NAME": ""
+      },
+      "manualUrl": "jdbc:h2:tcp://localhost:9092/~/test",
+      "sshTunnelPassphrase": "Encrypted ",
+      "sshTunnelPassword": "Encrypted ",
+      "sshTunnelPrivateKeyFile": "",
+      "username": "sa"
+    }
+  },
+  "name": "h2"
+}
