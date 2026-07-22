@@ -348,11 +348,10 @@
   <transform>
     <type>FilterRows</type>
     <name>Conservar desde fila 3</name>
-    <send_true_to>Table output</send_true_to>
-    <send_false_to/>
     <compare>
       <condition>
         <negated>N</negated>
+        <operator>-</operator>
         <leftvalue>nro_fila_datos</leftvalue>
         <function>&gt;</function>
         <rightvalue/>
@@ -365,8 +364,10 @@
           <isnull>N</isnull>
           <mask>####0;-####0</mask>
         </value>
+        <conditions/>
       </condition>
     </compare>
+    <send_true_to>Table output</send_true_to>
     <distribute>Y</distribute>
     <copies>1</copies>
     <GUI>
@@ -386,7 +387,7 @@
     <schema>PUBLIC</schema>
     <table>LISTA_MA</table>
     <commit>1000</commit>
-    <truncate>N</truncate>
+    <truncate>Y</truncate>
     <only_when_have_rows>N</only_when_have_rows>
     <ignore_errors>N</ignore_errors>
     <use_batch>Y</use_batch>
@@ -406,26 +407,86 @@
     <drop_columns>N</drop_columns>
     <change_column_types>N</change_column_types>
     <fields>
-      <field><stream_name>CÓDIGO ÚNICO DE PROYECTO</stream_name><column_name>CODIGO_UNICO_PROYECTO</column_name></field>
-      <field><stream_name>CÓDIGO DE LA MEDIDA ADMINISTRATIVA</stream_name><column_name>CODIGO_MEDIDA_ADMINISTRATIVA</column_name></field>
-      <field><stream_name>COORDINACIÓN</stream_name><column_name>COORDINACION</column_name></field>
-      <field><stream_name>N° DOC DE DICTADO DE MEDIDA ADMINISTRATIVA (RESOLUCION/ACTA)</stream_name><column_name>NUM_DOC_DICTADO_MEDIDA</column_name></field>
-      <field><stream_name>TIPO DOC DE DICTADO DE MEDIDA ADMINISTRATIVA</stream_name><column_name>TIPO_DOC_DICTADO_MEDIDA</column_name></field>
-      <field><stream_name>FECHA DE DOCUMENTO QUE DICTA MEDIDA ADMINISTRATIVA</stream_name><column_name>FECHA_DOC_DICTADO_MEDIDA</column_name></field>
-      <field><stream_name>FECHA DE NOTIFICACIÓN DEL DOC QUE DICTA MEDIDA ADMINISTRATIVA</stream_name><column_name>FECHA_NOTIFICACION_DOC_DICTADO</column_name></field>
-      <field><stream_name>ORIGEN DE LA MEDIDA ADMINISTRATIVA</stream_name><column_name>ORIGEN_MEDIDA_ADMINISTRATIVA</column_name></field>
-      <field><stream_name>CÓDIGO /NÚMERO DE DOCUMENTO DE ORIGEN</stream_name><column_name>CODIGO_NUM_DOC_ORIGEN</column_name></field>
-      <field><stream_name>N° DE EXPEDIENTE</stream_name><column_name>NUM_EXPEDIENTE</column_name></field>
-      <field><stream_name>ADMINISTRADO</stream_name><column_name>ADMINISTRADO</column_name></field>
-      <field><stream_name>UNIDAD FISCALIZABLE</stream_name><column_name>UNIDAD_FISCALIZABLE</column_name></field>
-      <field><stream_name>N° DE MEDIDA</stream_name><column_name>NUM_MEDIDA</column_name></field>
-      <field><stream_name>TIPO DE MEDIDA</stream_name><column_name>TIPO_MEDIDA</column_name></field>
-      <field><stream_name>¿MEDIDA ADMINISTRATIVA SE ENCUENTRA FIRME?</stream_name><column_name>MEDIDA_ADMINISTRATIVA_FIRME</column_name></field>
-      <field><stream_name>PUBLICACIÓN DEL DOC DE DICTADO DE MEDIDA ADMINISTRATIVA (RESOLUCION/ACTA)</stream_name><column_name>PUBLICACION_DOC_DICTADO_MEDIDA</column_name></field>
-      <field><stream_name>TIPO DOCUMENTO MA</stream_name><column_name>TIPO_DOCUMENTO_MA</column_name></field>
-      <field><stream_name>¿LA MA CONTINUA CON EFECTO?</stream_name><column_name>MA_CONTINUA_CON_EFECTO</column_name></field>
-      <field><stream_name>CONTADOR</stream_name><column_name>CONTADOR</column_name></field>
-      <field><stream_name>CUC</stream_name><column_name>CUC</column_name></field>
+      <field>
+        <stream_name>CÓDIGO ÚNICO DE PROYECTO</stream_name>
+        <column_name>CODIGO_UNICO_PROYECTO</column_name>
+      </field>
+      <field>
+        <stream_name>CÓDIGO DE LA MEDIDA ADMINISTRATIVA</stream_name>
+        <column_name>CODIGO_MEDIDA_ADMINISTRATIVA</column_name>
+      </field>
+      <field>
+        <stream_name>COORDINACIÓN</stream_name>
+        <column_name>COORDINACION</column_name>
+      </field>
+      <field>
+        <stream_name>N° DOC DE DICTADO DE MEDIDA ADMINISTRATIVA (RESOLUCION/ACTA)</stream_name>
+        <column_name>NUM_DOC_DICTADO_MEDIDA</column_name>
+      </field>
+      <field>
+        <stream_name>TIPO DOC DE DICTADO DE MEDIDA ADMINISTRATIVA</stream_name>
+        <column_name>TIPO_DOC_DICTADO_MEDIDA</column_name>
+      </field>
+      <field>
+        <stream_name>FECHA DE DOCUMENTO QUE DICTA MEDIDA ADMINISTRATIVA</stream_name>
+        <column_name>FECHA_DOC_DICTADO_MEDIDA</column_name>
+      </field>
+      <field>
+        <stream_name>FECHA DE NOTIFICACIÓN DEL DOC QUE DICTA MEDIDA ADMINISTRATIVA</stream_name>
+        <column_name>FECHA_NOTIFICACION_DOC_DICTADO</column_name>
+      </field>
+      <field>
+        <stream_name>ORIGEN DE LA MEDIDA ADMINISTRATIVA</stream_name>
+        <column_name>ORIGEN_MEDIDA_ADMINISTRATIVA</column_name>
+      </field>
+      <field>
+        <stream_name>CÓDIGO /NÚMERO DE DOCUMENTO DE ORIGEN</stream_name>
+        <column_name>CODIGO_NUM_DOC_ORIGEN</column_name>
+      </field>
+      <field>
+        <stream_name>N° DE EXPEDIENTE</stream_name>
+        <column_name>NUM_EXPEDIENTE</column_name>
+      </field>
+      <field>
+        <stream_name>ADMINISTRADO</stream_name>
+        <column_name>ADMINISTRADO</column_name>
+      </field>
+      <field>
+        <stream_name>UNIDAD FISCALIZABLE</stream_name>
+        <column_name>UNIDAD_FISCALIZABLE</column_name>
+      </field>
+      <field>
+        <stream_name>N° DE MEDIDA</stream_name>
+        <column_name>NUM_MEDIDA</column_name>
+      </field>
+      <field>
+        <stream_name>TIPO DE MEDIDA</stream_name>
+        <column_name>TIPO_MEDIDA</column_name>
+      </field>
+      <field>
+        <stream_name>¿MEDIDA ADMINISTRATIVA SE ENCUENTRA FIRME?</stream_name>
+        <column_name>MEDIDA_ADMINISTRATIVA_FIRME</column_name>
+      </field>
+      <field>
+        <stream_name>PUBLICACIÓN DEL DOC DE DICTADO DE MEDIDA ADMINISTRATIVA (RESOLUCION/ACTA)</stream_name>
+        <column_name>PUBLICACION_DOC_DICTADO_MEDIDA</column_name>
+      </field>
+      <field>
+        <stream_name>TIPO DOCUMENTO MA</stream_name>
+        <column_name>TIPO_DOCUMENTO_MA</column_name>
+      </field>
+      <field>
+        <stream_name>¿LA MA CONTINUA CON EFECTO?</stream_name>
+        <column_name>MA_CONTINUA_CON_EFECTO</column_name>
+      </field>
+      <field>
+        <stream_name>CONTADOR</stream_name>
+        <column_name>CONTADOR</column_name>
+      </field>
+      <field>
+        <stream_name>CUC</stream_name>
+        <column_name>CUC</column_name>
+      </field>
     </fields>
     <distribute>Y</distribute>
     <copies>1</copies>

@@ -1,0 +1,60 @@
+####Levantar H2 como server
+
+java -cp h2-2.4.240.jar org.h2.tools.Server -tcp -web
+
+
+###Oracle
+
+Hot : odaprod-scan
+Database : oefabd
+Port: 1534
+User : CSEPDV
+Pass: vWqFlNPWZQ0Fov
+
+jdbc:oracle:thin:@//odaprod-scan:1534/oefabd
+
+
+jdbc:h2:tcp://localhost:9092/~/test
+#####
+https://docs.google.com/spreadsheets/d/1-m-Y4WjYlGYZ8zRO2zvJOHKG5n8Df7H_JCO7dpvKbXg/edit?gid=1756823868#gid=1756823868
+
+1-m-Y4WjYlGYZ8zRO2zvJOHKG5n8Df7H_JCO7dpvKbXg
+
+
+
+
+###Notas para migracion
+- whorksheet 1
+    name : MA_IMPUESTAS
+
+- whorksheet 2
+    NAME : 1) Lista MA
+    cabecera : row1
+    excluir : row2 
+    datos : row 3 en adelante
+
+- whorksheet 3
+    name : 2) Ubicación
+    cabecera : row1
+    excluir : row2 
+    datos : row 3 en adelante 
+
+- whorksheet 4
+    name : 3) Info adicional
+    cabecera : row2
+    excluir : row1
+    datos : row 3 en adelante  
+    columnas : A - W
+
+- whorksheet 5
+    name: 4) Medidas Administrativas
+    cabecera : row1
+    excluir : row2 
+    datos : row 3 en adelante 
+
+- 5) Acreditación
+
+- 6) Modificatorias
+
+- PARAMETROS 
+

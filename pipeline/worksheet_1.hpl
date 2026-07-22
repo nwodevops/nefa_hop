@@ -249,7 +249,7 @@
       </field>
       <field>
         <stream_name>N° DOC DE DICTADO DE MEDIDA ADMINISTRATIVA (RESOLUCION/ACTA)</stream_name>
-        <column_name>ORIGEN_MEDIDA_ADMINISTRATIVA</column_name>
+        <column_name>NUM_DOC_DICTADO_MEDIDA</column_name>
       </field>
       <field>
         <stream_name>TIPO DOC DE DICTADO DE MEDIDA ADMINISTRATIVA</stream_name>
@@ -265,7 +265,7 @@
       </field>
       <field>
         <stream_name>ORIGEN DE LA MEDIDA ADMINISTRATIVA</stream_name>
-        <column_name>ADMINISTRADO</column_name>
+        <column_name>ORIGEN_MEDIDA_ADMINISTRATIVA</column_name>
       </field>
       <field>
         <stream_name>CÓDIGO /NÚMERO DE DOCUMENTO DE ORIGEN</stream_name>
@@ -277,11 +277,11 @@
       </field>
       <field>
         <stream_name>ADMINISTRADO</stream_name>
-        <column_name>UNIDAD_FISCALIZABLE</column_name>
+        <column_name>ADMINISTRADO</column_name>
       </field>
       <field>
         <stream_name>UNIDAD FISCALIZABLE</stream_name>
-        <column_name>NUM_DOC_DICTADO_MEDIDA</column_name>
+        <column_name>UNIDAD_FISCALIZABLE</column_name>
       </field>
     </fields>
     <distribute>Y</distribute>

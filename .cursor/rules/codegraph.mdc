@@ -1,0 +1,10 @@
+---
+description: Prefer CodeGraph MCP when indexed; Hop XML caveat
+alwaysApply: true
+---
+
+# CodeGraph
+
+Si existe `.codegraph/`, preferir `codegraph_explore` para preguntas estructurales antes de Grep/Read masivo.
+
+Este proyecto es Apache Hop (XML `.hpl` / `.hwf`): CodeGraph no indexa esos formatos como lenguajes de código; el valor del grafo aquí es limitado.
