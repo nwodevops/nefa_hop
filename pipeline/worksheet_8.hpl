@@ -11,22 +11,22 @@
     <name_sync_with_filename>Y</name_sync_with_filename>
     <created_user>-</created_user>
     <modified_user>-</modified_user>
-    <created_date>2026/07/21 12:19:59.174</created_date>
-    <modified_date>2026/07/21 12:19:59.174</modified_date>
+    <created_date>2026/07/23 18:00:00.000</created_date>
+    <modified_date>2026/07/23 18:00:00.000</modified_date>
   </info>
   <transform>
     <type>GoogleSheetsInput</type>
     <name>Google Sheets Input</name>
     <jsonCredentialPath>${PROJECT_HOME}/client_secret.json</jsonCredentialPath>
     <spreadsheetKey>1-m-Y4WjYlGYZ8zRO2zvJOHKG5n8Df7H_JCO7dpvKbXg</spreadsheetKey>
-    <worksheetId>1) Lista MA</worksheetId>
+    <worksheetId>PARAMETROS</worksheetId>
     <sampleFields>100</sampleFields>
     <timeout>5</timeout>
     <impersonation/>
     <appName>SEGUIMIENTO DE MEDIDAS ADMINISTRATIVAS</appName>
     <fields>
       <field>
-        <name>CÓDIGO ÚNICO DE PROYECTO</name>
+        <name>FERIADOS</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -40,7 +40,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>CÓDIGO DE LA MEDIDA ADMINISTRATIVA</name>
+        <name>CLASE</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -54,7 +54,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>COORDINACIÓN</name>
+        <name>VERBO RECTOR</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -68,7 +68,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>N° DOC DE DICTADO DE MEDIDA ADMINISTRATIVA (RESOLUCION/ACTA)</name>
+        <name>Departamento</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -82,7 +82,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>TIPO DOC DE DICTADO DE MEDIDA ADMINISTRATIVA</name>
+        <name>Provincia</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -96,7 +96,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>FECHA DE DOCUMENTO QUE DICTA MEDIDA ADMINISTRATIVA</name>
+        <name>Distrito</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -110,7 +110,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>FECHA DE NOTIFICACIÓN DEL DOC QUE DICTA MEDIDA ADMINISTRATIVA</name>
+        <name>PERIODO</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -124,7 +124,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>ORIGEN DE LA MEDIDA ADMINISTRATIVA</name>
+        <name>TRIMESTRE</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -138,7 +138,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>CÓDIGO /NÚMERO DE DOCUMENTO DE ORIGEN</name>
+        <name>CONCATENAR</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -152,7 +152,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>N° DE EXPEDIENTE</name>
+        <name>DIA</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -166,7 +166,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>ADMINISTRADO</name>
+        <name>Estado de la condición previa</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -180,7 +180,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>UNIDAD FISCALIZABLE</name>
+        <name>Estado de la Obligación de fondo</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -194,7 +194,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>N° DE MEDIDA</name>
+        <name>Estado de verificación</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -208,7 +208,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>TIPO DE MEDIDA</name>
+        <name>CONCATENADO</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -222,7 +222,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>¿MEDIDA ADMINISTRATIVA SE ENCUENTRA FIRME?</name>
+        <name>Estado general</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -236,7 +236,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>PUBLICACIÓN DEL DOC DE DICTADO DE MEDIDA ADMINISTRATIVA (RESOLUCION/ACTA)</name>
+        <name>SOLICITUD CATEGORIA</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -250,7 +250,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>TIPO DOCUMENTO MA</name>
+        <name>PLAZO</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -264,7 +264,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>¿LA MA CONTINUA CON EFECTO?</name>
+        <name>TIPO DE SOLICITUD</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -278,7 +278,7 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>CONTADOR</name>
+        <name>SOLICITUD</name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -292,7 +292,49 @@
         <INPUT_FIELDS>N</INPUT_FIELDS>
       </field>
       <field>
-        <name>CUC</name>
+        <name>RESPUESTA</name>
+        <position>0</position>
+        <length>-1</length>
+        <type>2</type>
+        <INPUT_IGNORE>N</INPUT_IGNORE>
+        <format/>
+        <trim_type>0</trim_type>
+        <precision>-1</precision>
+        <currency/>
+        <decimal/>
+        <group/>
+        <INPUT_FIELDS>N</INPUT_FIELDS>
+      </field>
+      <field>
+        <name>CONSECUENCIA DE LA RESPUESTA</name>
+        <position>0</position>
+        <length>-1</length>
+        <type>2</type>
+        <INPUT_IGNORE>N</INPUT_IGNORE>
+        <format/>
+        <trim_type>0</trim_type>
+        <precision>-1</precision>
+        <currency/>
+        <decimal/>
+        <group/>
+        <INPUT_FIELDS>N</INPUT_FIELDS>
+      </field>
+      <field>
+        <name>ID_CONSECUENCIA</name>
+        <position>0</position>
+        <length>-1</length>
+        <type>2</type>
+        <INPUT_IGNORE>N</INPUT_IGNORE>
+        <format/>
+        <trim_type>0</trim_type>
+        <precision>-1</precision>
+        <currency/>
+        <decimal/>
+        <group/>
+        <INPUT_FIELDS>N</INPUT_FIELDS>
+      </field>
+      <field>
+        <name>¿NUEVA RESOLUCIÓN DE MEDIDA ADMINISTRATIVA ORDENA </name>
         <position>0</position>
         <length>-1</length>
         <type>2</type>
@@ -311,68 +353,8 @@
     <distribute>Y</distribute>
     <copies>1</copies>
     <GUI>
-      <xloc>240</xloc>
-      <yloc>176</yloc>
-    </GUI>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <attributes/>
-  </transform>
-  <transform>
-    <type>Sequence</type>
-    <name>Numerar filas de datos</name>
-    <valuename>nro_fila_datos</valuename>
-    <use_database>N</use_database>
-    <connection/>
-    <schema/>
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name>fila_datos_ma</counter_name>
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>999999999</max_value>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-    <GUI>
-      <xloc>448</xloc>
-      <yloc>176</yloc>
-    </GUI>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <attributes/>
-  </transform>
-  <transform>
-    <type>FilterRows</type>
-    <name>Conservar desde fila 3</name>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <operator>-</operator>
-        <leftvalue>nro_fila_datos</leftvalue>
-        <function>&gt;</function>
-        <rightvalue/>
-        <value>
-          <name>constant</name>
-          <type>Integer</type>
-          <text>1</text>
-          <length>-1</length>
-          <precision>0</precision>
-          <isnull>N</isnull>
-          <mask>####0;-####0</mask>
-        </value>
-        <conditions/>
-      </condition>
-    </compare>
-    <send_true_to>Table output</send_true_to>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-    <GUI>
-      <xloc>656</xloc>
-      <yloc>176</yloc>
+      <xloc>192</xloc>
+      <yloc>160</yloc>
     </GUI>
     <partitioning>
       <method>none</method>
@@ -385,7 +367,7 @@
     <name>Table output</name>
     <connection>h2</connection>
     <schema>PUBLIC</schema>
-    <table>LISTA_MA_2</table>
+    <table>LISTA_MA_8</table>
     <commit>1000</commit>
     <truncate>Y</truncate>
     <only_when_have_rows>N</only_when_have_rows>
@@ -408,91 +390,103 @@
     <change_column_types>N</change_column_types>
     <fields>
       <field>
-        <stream_name>CÓDIGO ÚNICO DE PROYECTO</stream_name>
-        <column_name>CODIGO_UNICO_PROYECTO</column_name>
+        <stream_name>FERIADOS</stream_name>
+        <column_name>FERIADOS</column_name>
       </field>
       <field>
-        <stream_name>CÓDIGO DE LA MEDIDA ADMINISTRATIVA</stream_name>
-        <column_name>CODIGO_MEDIDA_ADMINISTRATIVA</column_name>
+        <stream_name>CLASE</stream_name>
+        <column_name>CLASE</column_name>
       </field>
       <field>
-        <stream_name>COORDINACIÓN</stream_name>
-        <column_name>COORDINACION</column_name>
+        <stream_name>VERBO RECTOR</stream_name>
+        <column_name>VERBO_RECTOR</column_name>
       </field>
       <field>
-        <stream_name>N° DOC DE DICTADO DE MEDIDA ADMINISTRATIVA (RESOLUCION/ACTA)</stream_name>
-        <column_name>NUM_DOC_DICTADO_MEDIDA</column_name>
+        <stream_name>Departamento</stream_name>
+        <column_name>DEPARTAMENTO</column_name>
       </field>
       <field>
-        <stream_name>TIPO DOC DE DICTADO DE MEDIDA ADMINISTRATIVA</stream_name>
-        <column_name>TIPO_DOC_DICTADO_MEDIDA</column_name>
+        <stream_name>Provincia</stream_name>
+        <column_name>PROVINCIA</column_name>
       </field>
       <field>
-        <stream_name>FECHA DE DOCUMENTO QUE DICTA MEDIDA ADMINISTRATIVA</stream_name>
-        <column_name>FECHA_DOC_DICTADO_MEDIDA</column_name>
+        <stream_name>Distrito</stream_name>
+        <column_name>DISTRITO</column_name>
       </field>
       <field>
-        <stream_name>FECHA DE NOTIFICACIÓN DEL DOC QUE DICTA MEDIDA ADMINISTRATIVA</stream_name>
-        <column_name>FECHA_NOTIFICACION_DOC_DICTADO</column_name>
+        <stream_name>PERIODO</stream_name>
+        <column_name>PERIODO</column_name>
       </field>
       <field>
-        <stream_name>ORIGEN DE LA MEDIDA ADMINISTRATIVA</stream_name>
-        <column_name>ORIGEN_MEDIDA_ADMINISTRATIVA</column_name>
+        <stream_name>TRIMESTRE</stream_name>
+        <column_name>TRIMESTRE</column_name>
       </field>
       <field>
-        <stream_name>CÓDIGO /NÚMERO DE DOCUMENTO DE ORIGEN</stream_name>
-        <column_name>CODIGO_NUM_DOC_ORIGEN</column_name>
+        <stream_name>CONCATENAR</stream_name>
+        <column_name>CONCATENAR</column_name>
       </field>
       <field>
-        <stream_name>N° DE EXPEDIENTE</stream_name>
-        <column_name>NUM_EXPEDIENTE</column_name>
+        <stream_name>DIA</stream_name>
+        <column_name>DIA</column_name>
       </field>
       <field>
-        <stream_name>ADMINISTRADO</stream_name>
-        <column_name>ADMINISTRADO</column_name>
+        <stream_name>Estado de la condición previa</stream_name>
+        <column_name>ESTADO_CONDICION_PREVIA</column_name>
       </field>
       <field>
-        <stream_name>UNIDAD FISCALIZABLE</stream_name>
-        <column_name>UNIDAD_FISCALIZABLE</column_name>
+        <stream_name>Estado de la Obligación de fondo</stream_name>
+        <column_name>ESTADO_OBLIGACION_FONDO</column_name>
       </field>
       <field>
-        <stream_name>N° DE MEDIDA</stream_name>
-        <column_name>NUM_MEDIDA</column_name>
+        <stream_name>Estado de verificación</stream_name>
+        <column_name>ESTADO_VERIFICACION</column_name>
       </field>
       <field>
-        <stream_name>TIPO DE MEDIDA</stream_name>
-        <column_name>TIPO_MEDIDA</column_name>
+        <stream_name>CONCATENADO</stream_name>
+        <column_name>CONCATENADO</column_name>
       </field>
       <field>
-        <stream_name>¿MEDIDA ADMINISTRATIVA SE ENCUENTRA FIRME?</stream_name>
-        <column_name>MEDIDA_ADMINISTRATIVA_FIRME</column_name>
+        <stream_name>Estado general</stream_name>
+        <column_name>ESTADO_GENERAL</column_name>
       </field>
       <field>
-        <stream_name>PUBLICACIÓN DEL DOC DE DICTADO DE MEDIDA ADMINISTRATIVA (RESOLUCION/ACTA)</stream_name>
-        <column_name>PUBLICACION_DOC_DICTADO_MEDIDA</column_name>
+        <stream_name>SOLICITUD CATEGORIA</stream_name>
+        <column_name>SOLICITUD_CATEGORIA</column_name>
       </field>
       <field>
-        <stream_name>TIPO DOCUMENTO MA</stream_name>
-        <column_name>TIPO_DOCUMENTO_MA</column_name>
+        <stream_name>PLAZO</stream_name>
+        <column_name>PLAZO</column_name>
       </field>
       <field>
-        <stream_name>¿LA MA CONTINUA CON EFECTO?</stream_name>
-        <column_name>MA_CONTINUA_CON_EFECTO</column_name>
+        <stream_name>TIPO DE SOLICITUD</stream_name>
+        <column_name>TIPO_SOLICITUD</column_name>
       </field>
       <field>
-        <stream_name>CONTADOR</stream_name>
-        <column_name>CONTADOR</column_name>
+        <stream_name>SOLICITUD</stream_name>
+        <column_name>SOLICITUD</column_name>
       </field>
       <field>
-        <stream_name>CUC</stream_name>
-        <column_name>CUC</column_name>
+        <stream_name>RESPUESTA</stream_name>
+        <column_name>RESPUESTA</column_name>
+      </field>
+      <field>
+        <stream_name>CONSECUENCIA DE LA RESPUESTA</stream_name>
+        <column_name>CONSECUENCIA_RESPUESTA</column_name>
+      </field>
+      <field>
+        <stream_name>ID_CONSECUENCIA</stream_name>
+        <column_name>ID_CONSECUENCIA</column_name>
+      </field>
+      <field>
+        <stream_name>¿NUEVA RESOLUCIÓN DE MEDIDA ADMINISTRATIVA ORDENA </stream_name>
+        <column_name>NVA_RES_MA_ORDENA</column_name>
       </field>
     </fields>
     <distribute>Y</distribute>
     <copies>1</copies>
     <GUI>
-      <xloc>896</xloc>
-      <yloc>176</yloc>
+      <xloc>496</xloc>
+      <yloc>160</yloc>
     </GUI>
     <partitioning>
       <method>none</method>
@@ -503,16 +497,6 @@
   <order>
     <hop>
       <from>Google Sheets Input</from>
-      <to>Numerar filas de datos</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Numerar filas de datos</from>
-      <to>Conservar desde fila 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Conservar desde fila 3</from>
       <to>Table output</to>
       <enabled>Y</enabled>
     </hop>

@@ -20,6 +20,11 @@ https://docs.google.com/spreadsheets/d/1-m-Y4WjYlGYZ8zRO2zvJOHKG5n8Df7H_JCO7dpvK
 
 1-m-Y4WjYlGYZ8zRO2zvJOHKG5n8Df7H_JCO7dpvKbXg
 
+###linux
+
+java -cp h2-2.4.240.jar org.h2.tools.Server -tcp -web -baseDir /home/eder/databases
+jdbc:h2:tcp://127.0.1.1:9092/test
+
 
 
 
@@ -35,7 +40,7 @@ https://docs.google.com/spreadsheets/d/1-m-Y4WjYlGYZ8zRO2zvJOHKG5n8Df7H_JCO7dpvK
 
 - whorksheet 3
     name : 2) Ubicación
-    cabecera : row1
+    cabecera : 
     excluir : row2 
     datos : row 3 en adelante 
 
@@ -48,13 +53,27 @@ https://docs.google.com/spreadsheets/d/1-m-Y4WjYlGYZ8zRO2zvJOHKG5n8Df7H_JCO7dpvK
 
 - whorksheet 5
     name: 4) Medidas Administrativas
+    cabecera : row3
+    datos : row 4 en adelante 
+
+- whorksheet 6
+    name: 5) Acreditacion
+    cabecera : row2
+    datos : row 4 en adelante 
+
+- whorksheet 7
+    name: - 6) Modificatorias
+    cabecera : row3
+    datos : row 4 en adelante 
+
+- whorksheet 8
+    name: - PARAMETROS 
     cabecera : row1
-    excluir : row2 
-    datos : row 3 en adelante 
+    datos : row 2 en adelante 
 
-- 5) Acreditación
 
-- 6) Modificatorias
 
-- PARAMETROS 
+
+
+
 
